@@ -1,3 +1,13 @@
+% Przedmiot: Techniki Obliczeniowe 
+% Kierunek studiów: Mechatronika 
+% Semestr: 2
+% Rok akademicki: 2019/2020
+% Data (dzień-miesiąc-rok): <<05-06-2020>>
+%
+% Imię:             <<Piotr>>
+% Nazwisko:         <<Kasprzak>>
+% Numer albumu ZUT: <<46748>>
+
 f1 = @(x)   2 + 1 ./ (1 + x.^2);
 f2 = @(x)   2 + sin(x);
 
