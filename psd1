@@ -1,3 +1,13 @@
+% Przedmiot: Techniki Obliczeniowe 
+% Kierunek studiów: Mechatronika 
+% Semestr: 2
+% Rok akademicki: 2019/2020
+% Data (dzień-miesiąc-rok): <<05-06-2020>>
+%
+% Imię:             <<Piotr>>
+% Nazwisko:         <<Kasprzak>>
+% Numer albumu ZUT: <<46748>>
+
 % Obliczanie PSD z pomocą FFT
 
 % Czytanie wartości y, 
@@ -19,6 +29,8 @@ y = y.';
 % Tylko 1 kanał
 %
 y = y(:,1);
+
+y = y(1:2:end)
 
 %sound(y, fs);
 
@@ -84,9 +96,3 @@ xlim([1, 10000]);
 grid on;
 grid minor;
 
-for i = y%2==0
-    for j = x%2==0
-        p=plot(x(j,i),y(j,i));
-        hold on
-    end   
-    delete(p)
